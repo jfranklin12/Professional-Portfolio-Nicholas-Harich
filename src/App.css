@@ -1,4 +1,10 @@
-#myNavbar {
+/* navigation */
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.primaryNavbar {
   background-color: black;
   height:auto;
   display: flex;
@@ -24,3 +30,4 @@
   color: rgb(196, 240, 191);
   font-size: 22px;
 }
+

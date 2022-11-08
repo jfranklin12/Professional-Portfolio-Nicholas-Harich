@@ -1,13 +1,16 @@
 import "../../../App.css";
+import logo from "../../../images/logo.jpg"
 import React from "react";
 
 function MyNavbar({ currentPage, handlePageChange }) {
     return (
-        <div id="myNavbar" className="sticky-top">
-            <nav className="navbar navbar-expand">
-                <div className="navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item  navbar-text">
+        <div className="sticky-top primaryNavbar">
+            <div>
+                <img className="logo" src={logo} />
+            </div>
+            <nav>
+                    <ul className="primaryNavbar">
+                        <li className="navbarText">
                             <a
                                 href="#AboutMe"
                                 onClick={() => handlePageChange("AboutMe")}
@@ -16,7 +19,7 @@ function MyNavbar({ currentPage, handlePageChange }) {
                                 About Me
                             </a>
                         </li>
-                        <li className="nav-item  navbar-text">
+                        <li className="navbarText">
                             <a
                                 href="#MyCareer"
                                 onClick={() => handlePageChange("MyCareer")}
@@ -25,7 +28,7 @@ function MyNavbar({ currentPage, handlePageChange }) {
                                 My Career
                             </a>
                         </li>
-                        <li className="nav-item navbar-text">
+                        <li className="navbarText">
                             <a
                                 href="#Contact"
                                 onClick={() => handlePageChange("Contact")}
@@ -34,7 +37,7 @@ function MyNavbar({ currentPage, handlePageChange }) {
                                 Contact
                             </a>
                         </li>
-                        <li className="nav-item  navbar-text">
+                        <li className="navbarText">
                             <a
                                 href="#link"
                                 onClick={() => handlePageChange("Resume")}
@@ -44,7 +47,6 @@ function MyNavbar({ currentPage, handlePageChange }) {
                             </a>
                         </li>
                     </ul>
-                </div>
             </nav>
         </div>
     )
