@@ -4,7 +4,7 @@ import React from "react";
 
 function MyNavbar({ currentPage, handlePageChange }) {
     return (
-        <div className="sticky-top primaryNavbar">
+        <div className="primaryNavbar">
             <div>
                 <img className="logo" src={logo} />
             </div>

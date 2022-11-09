@@ -1,33 +1,44 @@
 /* navigation */
 .logo {
-  height: 50px;
-  width: 50px;
+  height: 3rem;
   border-radius: 50%;
+  margin: 1.5rem;
 }
 .primaryNavbar {
   background-color: black;
   height:auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
-.navbar-text {
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 #navLinks{
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: rgb(31, 185, 31);
-  font-size: 22px;
+  font-size: 1rem;
+  margin: .75em;
 }
 #navLinks:hover, #active{
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: rgb(196, 240, 191);
-  font-size: 22px;
+  font-size: 1rem;
 }
 
+@media (max-width: 35em) {
+  .primaryNavbar{
+    position: fixed;
+    inset: 0 0 0 40%;
+    background: steelblue;
+    flex-direction: column;
+    padding: min(30vh, 7rem) 2em;
+    justify-content: flex-start;
+    align-items:flex-start;
+  }
+}
