@@ -9,7 +9,7 @@ function MyNavbar({ currentPage, handlePageChange }) {
                 <img className="logo" src={logo} />
             </div>
             <nav>
-                    <ul className="primaryNavbar">
+                    <ul className="primaryNavigation">
                         <li className="navbarText">
                             <a
                                 href="#AboutMe"

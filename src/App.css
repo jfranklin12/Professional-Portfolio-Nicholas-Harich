@@ -5,15 +5,20 @@
   margin: 1.5rem;
 }
 .primaryNavbar {
-  background-color: black;
+  background: rgba(255, 255, 255, 0.473);
   height:auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
+}
+.primaryNavigation {
+  display: flex;
+}
+.primaryNavigation li {
   list-style: none;
+
 }
 #navLinks{
   text-decoration: none;
@@ -32,13 +37,15 @@
 }
 
 @media (max-width: 35em) {
-  .primaryNavbar{
+  .primaryNavigation{
     position: fixed;
     inset: 0 0 0 40%;
-    background: steelblue;
+    background: rgba(255, 255, 255, 0.473);
     flex-direction: column;
     padding: min(30vh, 7rem) 2em;
-    justify-content: flex-start;
-    align-items:flex-start;
+    backdrop-filter: blur(1rem);
+  }
+  .primaryNavbar {
+    background-color: transparent;
   }
 }
