@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from "./components/pages/homepages/header";
+import Hero from "./components/pages/homepages/hero";
 import MyNavbar from './components/pages/homepages/navbar';
 import backgroundImage from "./images/backgroundImage.jpg"
 
@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <MyNavbar />
-      <Header />
+      <Hero />
     </div>
   );
 }
